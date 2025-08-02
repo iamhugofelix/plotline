@@ -8,6 +8,7 @@ export default function NavBar() {
       <div className="nav-links">
         <Button label="Movies" url="/movies" />
         <Button label="TV Shows" url="/tv" />
+        <Button label="Upcoming" url="/upcoming" />
       </div>
     </div>
   );
