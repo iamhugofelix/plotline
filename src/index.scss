@@ -1,0 +1,12 @@
+@use './styles/globals';
+@use './styles/reset';
+
+
+/* Components */
+@use './components/Buttons/Buttons';
+@use './components/NavBar/NavBar';
+@use './components/MovieCard/MovieCard';
+@use './components/FeaturedMovie/FeaturedMovie';
+@use './components/PageSection/PageSection';
+@use './components/Popular/Popular';
+@use './components/StarRating/StarRating';

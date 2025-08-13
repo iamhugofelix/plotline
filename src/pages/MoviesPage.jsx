@@ -1,19 +1,16 @@
-import NowPlayingMovies from "../components/NowPlayingMovies";
-import PopularMovies from "../components/PopularMovies";
-import Section from "../components/Section";
+import NowPlaying from "../components/NowPlaying";
+import Popular from "../components/Popular/Popular";
+import PageSection from "../components/PageSection/PageSection";
+import FeaturedMovie from "../components/FeaturedMovie/FeaturedMovie";
 
 export default function MoviesPage() {
     
     return (
-      <div>
-        <Section sectionTitle={"Popular Movies"}>
-          <PopularMovies />
-        </Section>
-        
-        <Section sectionTitle={"Now Playing"}>
-          <NowPlayingMovies />
-        </Section>
-
-      </div>
+      <>
+        <FeaturedMovie />
+        <PageSection sectionTitle={"Popular Movies"}>
+          <Popular />
+        </PageSection>
+      </>
     );
 }

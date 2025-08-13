@@ -1,12 +1,17 @@
-import FetchExample from "../components/FetchExample";
+import FeaturedMovie from "../components/FeaturedMovie/FeaturedMovie";
+import PageSection from "../components/PageSection/PageSection";
+import PopularMovies from "../components/Popular/Popular";
+
 
 export default function Homepage() {
     
     return (
-      <div>
-        <h1>Homepage</h1>
-        <FetchExample />
-      </div>
+      <>
+        <FeaturedMovie />
+        <PageSection sectionTitle={"Popular Movies"}>
+          <PopularMovies />
+        </PageSection>
+      </>
     );
     
 }

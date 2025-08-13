@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import { options } from "../utils";
-import MovieCard from "./MovieCard";
-import Section from "./Section";
+import MovieCard from "./MovieCard/MovieCard";
 
-export default function NowPlayingMovies() {
+export default function NowPlaying({type = movie}) {
   const [isLoading, setIsLoading] = useState(false);
   const [movies, setMovies] = useState([]);
   const hasData = movies.lenght;
@@ -14,7 +13,7 @@ export default function NowPlayingMovies() {
 
       try {
         const data = await fetch(
-          `https://api.themoviedb.org/3/movie/now_playing`,
+          `https://api.themoviedb.org/3/${type}/now_playing`,
           options // const imported from utils.js
         );
         const newMoviesList = await data.json();

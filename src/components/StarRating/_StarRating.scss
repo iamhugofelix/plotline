@@ -1,0 +1,18 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.star-rating{
+    @include flex(start, center, row);
+    gap: 0.5rem;
+    color: $zinc-300;
+    
+    .stars {
+        @include flex(start, center, row);
+        gap: 0.25rem;
+
+        svg {
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+}

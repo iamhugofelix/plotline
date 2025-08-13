@@ -1,0 +1,9 @@
+@use '../../styles/mixins' as *;
+
+.grid {
+    @include grid;
+
+    img {
+      width: 100%;
+    }
+}

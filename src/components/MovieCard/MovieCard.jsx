@@ -1,18 +1,20 @@
+import StarRating from "../StarRating/StarRating";
+
 export default function MovieCard({moviePoster, movieTitle, movieYear, movieRating}) {
     
     return (
-      <div className="movie-card">
+      <div className="card">
         <img
           src={moviePoster}
           alt={`${movieTitle} Poster`}
-          className="movie-poster"
+          className="card-poster"
         />
-        <div className="movie-info">
+        <div className="card-info">
           <h3>{movieTitle}</h3>
           <span>{movieYear}</span>
         </div>
-        <div className="movie-rating-wrapper">
-          <span>{movieRating}</span>
+        <div className="card-rating-wrapper">
+          <StarRating rating={movieRating} />
         </div>
       </div>
     );

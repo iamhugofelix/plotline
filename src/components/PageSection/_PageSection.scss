@@ -1,0 +1,9 @@
+@use '../../styles/mixins' as *;
+
+.page-section {
+    @include section-padding;
+    @include flex(start, start, column);
+    gap: 1rem;
+
+
+}

@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
-import { options } from "../utils";
-import MovieCard from "../components/MovieCard";
-import Section from "../components/Section";
+import { options } from "../../utils";
+import MovieCard from "../MovieCard/MovieCard";
 
-export default function PopularMovies() {
+export default function PopularMovies({type = 'movie'}) {
     const [isLoading, setIsLoading] = useState(false);
     const [movies, setMovies] = useState([])
-    const hasData = movies.lenght;
+    const hasData = movies.length > 0;
 
 
     useEffect(() => {
@@ -16,7 +15,7 @@ export default function PopularMovies() {
         
         try {
             const data = await fetch(
-                    `https://api.themoviedb.org/3/movie/popular`,
+                    `https://api.themoviedb.org/3/${type}/popular`,
                     options // const imported from utils.js
             );
             const newMoviesList = await data.json();
@@ -44,8 +43,8 @@ export default function PopularMovies() {
     // console.log("hasData", hasData);
     
     return (
-        <div>
-          {!hasData
+        <div className="grid">
+          {hasData
             ? movies.map((movie) => {
                 return (
                   <MovieCard
