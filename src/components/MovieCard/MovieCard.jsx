@@ -10,8 +10,8 @@ export default function MovieCard({moviePoster, movieTitle, movieYear, movieRati
           className="card-poster"
         />
         <div className="card-info">
-          <h3>{movieTitle}</h3>
-          <span>{movieYear}</span>
+          <h3 className="h6">{movieTitle}</h3>
+          <span className="p">{movieYear}</span>
         </div>
         <div className="card-rating-wrapper">
           <StarRating rating={movieRating} />

@@ -16,16 +16,16 @@ export default function NavBar() {
         />
       </Link>
       <div className="nav-links">
-        <Buttons url="/" type="nav" size="md">
+        <Buttons url="/" type="nav" size="sm">
           <Compass size={16} /> Discover
         </Buttons>
-        <Buttons url="/movies" type="nav" size="md">
+        <Buttons url="/movies" type="nav" size="sm">
           <Clapperboard size={16} /> Movies
         </Buttons>
-        <Buttons url="/tv" type="nav" size="md">
+        <Buttons url="/tv" type="nav" size="sm">
           <Tv size={16} /> Series
         </Buttons>
-        <Buttons url="/upcoming" type="nav" size="md">
+        <Buttons url="/upcoming" type="nav" size="sm">
           <Film size={16} /> Upcoming
         </Buttons>
       </div>

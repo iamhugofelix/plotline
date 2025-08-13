@@ -57,7 +57,7 @@ export default function FeaturedMovie({ type = "movie" }) {
             <StarRating rating={filterBestRated[0].vote_average} />
           </div>
           <div className="featured-actions">
-            <Button type="transparent" size="md">
+            <Button type="white" size="lg">
               Learn more
             </Button>
           </div>

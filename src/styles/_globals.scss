@@ -1,16 +1,77 @@
 @use './variables' as *;
 
+// Page default colors
 body {
     background-color: $zinc-950;
     color: $white;
+}
 
-    // Typography
-    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+a {
+    color: $white;
+}
 
+// Typography
+ @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
     font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
+h1, .h1 {
+    font-size: $h1;
+    line-height: 1.1;
+    letter-spacing: -1px;
+}
 
-    a {
-        color: white;
-    }
+h2, .h2 {
+    font-size: $h2;
+    line-height: 1.1;
+    letter-spacing: -.5px;
+}
+
+h3, .h3 {
+    font-size: $h3;
+    line-height: 1.1;
+    letter-spacing: -.5px;
+}
+
+h4, .h4 {
+    font-size: $h4;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+h5, .h5 {
+    font-size: $h5;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+h5, .h6 {
+    font-size: $h6;
+    line-height: 1.2;
+    letter-spacing: 0;
+}
+
+p, .p {
+    font-size: $p;
+    line-height: 1.6;
+    letter-spacing: 0;
+}
+
+small, .small {
+    font-size: $small;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+.x-small {
+    font-size: $x-small;
+    line-height: 1.1;
+    letter-spacing: 0;
+}
+
+a {
+    font-size: $p;
+    line-height: 1.5;
 }

@@ -3,12 +3,12 @@
 
 .btn {
     @include flex(center, center, row);
-    padding: 0.875rem 1rem;
-    line-height: 100%;
+    line-height: normal;
+    border-radius: 10rem;
     transition: all 0.2s ease-in-out;
+    font-weight: $regular;
 
     &-nav{
-        border-radius: 10rem;
         background-color: rgba($color: $white, $alpha: 0);
         transition: all 0.4s ease-in-out;
         gap: 0.5rem;
@@ -19,7 +19,6 @@
     }
 
     &-transparent{
-        border-radius: 10rem;
         background-color: rgba($color: $white, $alpha: .1);
         transition: all 0.4s ease-in-out;
         gap: 0.5rem;
@@ -29,7 +28,29 @@
         }
     }
 
+    &-white {
+        background-color: rgba($color: $white, $alpha: 1);
+        color: $zinc-800;
+        transition: all 0.4s ease-in-out;
+        gap: 0.5rem;
+
+        &:hover {
+            background-color: rgba($color: $white, $alpha: .8);
+        }
+    }
+
+    &--sm {
+        font-size: $p;
+        padding: 0.875rem 1rem .875rem 1rem;
+    }
+
     &--md {
-        font-size: 1rem;
+        font-size: $p;
+        padding: 0.875rem 1.25rem 1rem 1.25rem;
+    }
+
+    &--lg {
+        font-size: $p;
+        padding: 1.125rem 1.5rem 1.25rem 1.5rem;
     }
 }

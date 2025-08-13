@@ -18,7 +18,7 @@ export default function StarRating ({rating}) {
     return (
       <div className="star-rating">
         <div className="stars">{stars}</div>
-        <span className="rating">{roundRating}</span>
+        <span className="rating small">{roundRating}</span>
       </div>
     );
 }
