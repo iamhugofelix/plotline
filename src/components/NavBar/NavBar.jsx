@@ -1,6 +1,8 @@
 import { Link } from "react-router";
 import Buttons from "../Buttons/Buttons";
 import { Clapperboard, Compass, Film, Tv } from "lucide-react";
+import { GrGithub } from "react-icons/gr";
+import { FaGithub } from "react-icons/fa";
 
 
 export default function NavBar() {
@@ -15,7 +17,7 @@ export default function NavBar() {
       </Link>
       <div className="nav-links">
         <Buttons url="/" type="nav" size="md">
-          <Compass size={16}/> Discover
+          <Compass size={16} /> Discover
         </Buttons>
         <Buttons url="/movies" type="nav" size="md">
           <Clapperboard size={16} /> Movies
@@ -26,6 +28,11 @@ export default function NavBar() {
         <Buttons url="/upcoming" type="nav" size="md">
           <Film size={16} /> Upcoming
         </Buttons>
+      </div>
+      <div className="right-actions">
+        <Link to={"https://github.com/iamhugofelix/plotline"} target="_blank">
+        <FaGithub size={24}/>
+        </Link>
       </div>
     </div>
   );
