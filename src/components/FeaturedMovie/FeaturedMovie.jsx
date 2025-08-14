@@ -97,7 +97,7 @@ export default function TestingFetch({ type = "movie" }) {
       </div>
 
       <div className="featured-actions">
-        <Button type="white" size="sm">
+        <Button type="white" size="md">
           Learn more
         </Button>
       </div>
