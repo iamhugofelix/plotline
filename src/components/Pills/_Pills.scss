@@ -1,0 +1,27 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.pill {
+    @include flex(center, center, row);
+    line-height: normal;
+    cursor: pointer;
+    border-radius: 10rem;
+    transition: all 0.2s ease-in-out;
+
+    &-red {
+        background-color: $accent-base;
+        color: $white;
+    }
+
+
+    &-transparent {
+        background: rgba($color: $zinc-950, $alpha: .1);
+        color: $white;
+    }
+
+    &--sm {
+        font-size: $small;
+        padding: 0.5rem 0.75rem;
+        font-weight: $light;
+    }
+}

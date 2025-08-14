@@ -189,6 +189,30 @@ html {
   padding: 1.125rem 1.5rem 1.25rem 1.5rem;
 }
 
+.pill {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  line-height: normal;
+  cursor: pointer;
+  border-radius: 10rem;
+  transition: all 0.2s ease-in-out;
+}
+.pill-red {
+  background-color: #FF1744;
+  color: #ffffff;
+}
+.pill-transparent {
+  background: rgba(9, 9, 11, 0.1);
+  color: #ffffff;
+}
+.pill--sm {
+  font-size: clamp(0.875rem, 1.2vw, 0.875rem);
+  padding: 0.5rem 0.75rem;
+  font-weight: 400;
+}
+
 .nav-bar {
   display: flex;
   flex-direction: row;
@@ -242,7 +266,7 @@ html {
   align-items: start;
   padding: 2rem;
   gap: 1rem;
-  min-height: 80vh;
+  min-height: 85vh;
 }
 @media (max-width: 1200px) {
   .featured {
@@ -254,13 +278,31 @@ html {
     padding: 2rem 1rem;
   }
 }
-.featured .featured-content {
+
+.featured-categories {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.featured-content {
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
   gap: 1rem;
   max-width: 60%;
+  padding-bottom: 1.5rem;
+}
+
+.featured-metadata {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 1rem;
 }
 
 .page-section {

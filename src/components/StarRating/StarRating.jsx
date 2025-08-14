@@ -3,15 +3,14 @@ import { FaRegStar, FaStar, FaStarHalf } from "react-icons/fa";
 
 export default function StarRating ({rating}) {
 
-    console.log(rating);
     const roundRating = Math.round(rating) / 2 
     const stars = []
 
     for (let i = 1; i < 5; i++) {
       if (roundRating >= i) {
-        stars.push(<FaStar />);
+        stars.push(<FaStar key={i} />);
       } else if ((roundRating >= i - 0.5)) {
-        stars.push(<FaStarHalf />);
+        stars.push(<FaStarHalf key={i} />);
       } 
     }
     

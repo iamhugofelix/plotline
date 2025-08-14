@@ -5,11 +5,22 @@
     @include flex (end, start, column);
     @include section-padding;
     gap: 1rem;
-    min-height: 80vh;
+    min-height: 85vh;    
+}
 
-    .featured-content {
-        @include flex(start, start, column);
-        gap: 1rem;
-        max-width: 60%;
-    }
+.featured-categories {
+    @include flex(center, center, row);
+    gap: 0.5rem;
+}
+
+.featured-content {
+    @include flex(start, start, column);
+    gap: 1rem;
+    max-width: 60%;
+    padding-bottom: 1.5rem;
+}
+
+.featured-metadata {
+    @include flex(start, center, row);
+    gap: 1rem;
 }
