@@ -4,7 +4,9 @@
     @include flex(start, start, column);
     gap: .5rem;
     cursor: pointer;
+    min-width: 16rem;
     transition: all 0.2s ease-in-out;
+    scroll-snap-align: start;
     
     img {
         border-radius: .25rem;

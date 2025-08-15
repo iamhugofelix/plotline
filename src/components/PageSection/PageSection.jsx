@@ -1,13 +1,15 @@
-import Button from "../Buttons/Buttons";
+export default function PageSection({children, sectionTitle, horScroll = false}) {
 
-export default function PageSection({children, sectionTitle, buttonLink, buttonLabel, isGrid = true}) {
     
     return (
-      <div className="page-section">
+      <div
+        className={`page-section`}
+        style={horScroll ? { paddingRight: 0 } : {}}
+      >
         <div className="title-section">
           <h2>{sectionTitle}</h2>
         </div>
-        <div className="section-content">{children}</div>
+        {children}
       </div>
     );
     

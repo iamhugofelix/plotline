@@ -3,7 +3,7 @@ import { options } from "../../utils";
 import StarRating from "../StarRating/StarRating";
 import Button from "../Buttons/Buttons";
 
-export default function TestingFetch({ type = "movie" }) {
+export default function FeaturedMovie({ type = "movie", position = 0 }) {
   const [list, setList] = useState([]);
   const [topItem, setTopItem] = useState(null);
   const [details, setDetails] = useState(null);
@@ -24,7 +24,7 @@ export default function TestingFetch({ type = "movie" }) {
 
         // pick the best rated item (make a copy before sorting)
         const best = results.length
-          ? results.sort((a, b) => b.vote_average - a.vote_average)[0]
+          ? results.sort((a, b) => b.vote_average - a.vote_average)[position]
           : null;
         setTopItem(best);
       } catch (e) {

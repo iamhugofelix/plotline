@@ -14,7 +14,7 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<MoviesPage />} />
+        <Route path="/" element={<Homepage   />} />
         <Route path="movies" element={<MoviesPage />} />
         <Route path="tv" element={<TvPage />} />
         <Route path="upcoming" element={<Upcoming />} />

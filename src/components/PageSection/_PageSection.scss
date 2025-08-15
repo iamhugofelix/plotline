@@ -3,7 +3,31 @@
 .page-section {
     @include section-padding;
     @include flex(start, start, column);
-    gap: 1rem;
+    gap: 2rem;
+}
 
+.grid {
+    @include grid;
+    gap: 1.5rem;
 
+    img {
+    width: 100%;
+}
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; 
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+  }
 }

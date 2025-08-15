@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { options } from "../../utils";
-import MovieCard from "../MovieCard/MovieCard";
+import Card from "../Card/Card";
 
-export default function PopularMovies({type = 'movie'}) {
+export default function PopularMovies() {
     const [isLoading, setIsLoading] = useState(false);
     const [movies, setMovies] = useState([])
     const hasData = movies.length > 0;
@@ -15,7 +15,7 @@ export default function PopularMovies({type = 'movie'}) {
         
         try {
             const data = await fetch(
-                    `https://api.themoviedb.org/3/${type}/popular`,
+                    `https://api.themoviedb.org/3/movie/popular`,
                     options // const imported from utils.js
             );
             const newMoviesList = await data.json();
@@ -43,20 +43,20 @@ export default function PopularMovies({type = 'movie'}) {
     // console.log("hasData", hasData);
     
     return (
-        <div className="grid">
+        <div className='flex'>
           {hasData
             ? movies.map((movie) => {
                 return (
-                  <MovieCard
+                  <Card
                     key={movie.id}
-                    moviePoster={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
-                    movieTitle={movie.title}
-                    movieYear={movie.release_date.slice(0, 4)}
-                    movieRating={movie.vote_average}
+                    cardPoster={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`}
+                    cardTitle={movie.title}
+                    cardYear={movie.release_date.slice(0, 4)}
+                    cardRating={movie.vote_average}
                   />
                 );
               })
-            : ""}
+          : ""}
         </div>
     );
 }

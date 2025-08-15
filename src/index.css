@@ -249,7 +249,9 @@ html {
   align-items: start;
   gap: 0.5rem;
   cursor: pointer;
+  min-width: 16rem;
   transition: all 0.2s ease-in-out;
+  scroll-snap-align: start;
 }
 .card img {
   border-radius: 0.25rem;
@@ -264,9 +266,10 @@ html {
   flex-direction: column;
   justify-content: end;
   align-items: start;
-  padding: 2rem;
+  padding: 4rem;
   gap: 1rem;
-  min-height: 85vh;
+  height: 85vh;
+  min-height: 20rem;
 }
 @media (max-width: 1200px) {
   .featured {
@@ -275,7 +278,7 @@ html {
 }
 @media (max-width: 800px) {
   .featured {
-    padding: 2rem 1rem;
+    padding: 2rem;
   }
 }
 
@@ -296,6 +299,11 @@ html {
   max-width: 60%;
   padding-bottom: 1.5rem;
 }
+@media (max-width: 1200px) {
+  .featured-content {
+    max-width: 100%;
+  }
+}
 
 .featured-metadata {
   display: flex;
@@ -306,12 +314,12 @@ html {
 }
 
 .page-section {
-  padding: 2rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  gap: 1rem;
+  gap: 2rem;
 }
 @media (max-width: 1200px) {
   .page-section {
@@ -320,7 +328,7 @@ html {
 }
 @media (max-width: 800px) {
   .page-section {
-    padding: 2rem 1rem;
+    padding: 2rem;
   }
 }
 
@@ -328,6 +336,7 @@ html {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   gap: 1rem;
+  gap: 1.5rem;
 }
 @media (max-width: 1200px) {
   .grid {
@@ -340,6 +349,21 @@ html {
   }
 }
 .grid img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  width: 100%;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+.flex::-webkit-scrollbar {
+  display: none;
+}
+.flex img {
   width: 100%;
 }
 

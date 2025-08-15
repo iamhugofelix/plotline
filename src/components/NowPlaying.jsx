@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { options } from "../utils";
-import MovieCard from "./MovieCard/MovieCard";
+import MovieCard from "./Card/Card";
 
 export default function NowPlaying({type = movie}) {
   const [isLoading, setIsLoading] = useState(false);
