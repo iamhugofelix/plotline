@@ -2,7 +2,7 @@
 @use '../../styles/variables' as *;
 
 .pill {
-    @include flex(center, center, row);
+    @include flex(row, center, center);
     line-height: normal;
     cursor: pointer;
     border-radius: 10rem;

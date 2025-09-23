@@ -1,7 +1,7 @@
 import { FaRegStar, FaStar, FaStarHalf } from "react-icons/fa";
 
 
-export default function StarRating ({rating}) {
+export default function StarRating ({rating = 0}) {
 
     const roundRating = Math.round(rating) / 2 
     const stars = []
@@ -15,9 +15,9 @@ export default function StarRating ({rating}) {
     }
     
     return (
-      <div className="star-rating">
-        <div className="stars">{stars}</div>
-        <span className="rating small">{roundRating}</span>
-      </div>
-    );
+        <div className="star-rating">
+          <div className="stars">{stars}</div>
+          <span className="rating small">{rating > 0 ? roundRating : ''}</span>
+        </div>
+      )
 }

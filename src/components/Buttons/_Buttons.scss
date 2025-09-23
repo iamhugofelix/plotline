@@ -2,7 +2,7 @@
 @use '../../styles/variables' as *;
 
 .btn {
-    @include flex(center, center, row);
+    @include flex(row, center, center);
     line-height: normal;
     border-radius: 10rem;
     transition: all 0.2s ease-in-out;

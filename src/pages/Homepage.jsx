@@ -1,10 +1,6 @@
-import FeaturedMovie from "../components/FeaturedMovie/FeaturedMovie";
-import PageSection from "../components/PageSection/PageSection";
-import PopularMovies from "../components/Popular/PopularMovies";
-import PopularSeries from "../components/Popular/PopularSeries";
 
-
-// NOT IN USE
+import TopMovie from "../components/TopMovie/TopMovie";
+import TrendingMovies from "../components/TrendingMovies/TrendingMovies";
 
 export default function Homepage() {
 
@@ -12,13 +8,8 @@ export default function Homepage() {
     
     return (
       <>
-        <FeaturedMovie />
-        <PageSection sectionTitle={"Popular Movies"} horScroll={true}>
-          <PopularMovies />
-        </PageSection>
-        <PageSection sectionTitle={"Popular Series"} horScroll={true}>
-          <PopularSeries />
-        </PageSection>
+        <TopMovie />
+        <TrendingMovies />
       </>
     );
     

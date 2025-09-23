@@ -2,7 +2,7 @@
 @use '../../styles/variables' as *;
 
 .nav-bar {
- @include flex(space-between, center, row);
+ @include flex(row, space-between, center);
  padding: 1rem 2rem;
  position: absolute;
  top: 0;

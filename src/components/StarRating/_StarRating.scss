@@ -2,7 +2,7 @@
 @use '../../styles/variables' as *;
 
 .star-rating{
-    @include flex(start, center, row);
+    @include flex(row, start, center);
     gap: 0.5rem;
     color: $zinc-300;
     

@@ -1,19 +1,20 @@
 import StarRating from "../StarRating/StarRating";
 
-export default function Card({cardPoster, cardTitle, cardYear, cardRating}) {
+export default function MovieCard({cardPoster, cardTitle, cardYear, cardRating}) {
     
     return (
       <div className="card">
         <img
-          src={cardPoster}
+          src={`https://image.tmdb.org/t/p/original/${cardPoster}`}
           alt={`${cardTitle} Poster`}
           className="card-poster"
         />
         <div className="card-info">
           <h3 className="h6">{cardTitle}</h3>
-          <span className="p">{cardYear}</span>
         </div>
-        <div className="card-rating-wrapper">
+        <div className="card-details">
+          <span className="p">{cardYear}</span>
+          <span className="p">&middot;</span>
           <StarRating rating={cardRating} />
         </div>
       </div>
