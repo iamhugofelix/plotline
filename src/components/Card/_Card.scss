@@ -5,7 +5,7 @@
     @include flex(column, start, start);
     gap: .5rem;
     cursor: pointer;
-    min-width: 16rem;
+    min-width: 14rem;
     transition: all 0.2s ease-in-out;
     opacity: 0.6;
     scroll-snap-align: start;

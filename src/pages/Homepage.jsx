@@ -1,4 +1,5 @@
 
+import NowPlayingMovies from "../components/NowPlayingMovies/NowPlayingMovies";
 import TopMovie from "../components/TopMovie/TopMovie";
 import TrendingMovies from "../components/TrendingMovies/TrendingMovies";
 
@@ -9,7 +10,10 @@ export default function Homepage() {
     return (
       <>
         <TopMovie />
-        <TrendingMovies />
+        <div className="page-content">
+          <TrendingMovies />
+          <NowPlayingMovies />
+        </div>
       </>
     );
     

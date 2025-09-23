@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import { fetchTrendingMovies } from "../../services/fetchTrendingMovies";
 import { fetchMovieDetails } from "../../services/fetchMovieDetails";
 import HeroSection from "../PageSections/HeroSection";
-import StarRating from "../StarRating/StarRating";
 
 export default function TopMovie() {
   const [movieDetails, setMovieDetails] = useState([]);

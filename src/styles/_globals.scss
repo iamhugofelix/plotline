@@ -1,4 +1,5 @@
 @use './variables' as *;
+@use './mixins' as *;
 
 // Page default colors
 body {
@@ -74,4 +75,11 @@ small, .small {
 a {
     font-size: $p;
     line-height: 1.5;
+}
+
+// Layout
+
+.page-content {
+    @include flex (column, start, start);
+    padding-top: 4rem;
 }

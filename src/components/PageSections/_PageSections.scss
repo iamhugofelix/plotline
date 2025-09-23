@@ -4,8 +4,8 @@
 // FULL-WIDTH SECTION
 .fw-section {
     @include flex(column, start, start);
-    padding: 6rem 0 6rem 3rem;
-    gap: 2rem;
+    padding: 1rem 0 1rem 3rem;
+    gap: 1rem;
     width: 100dvw;
 
     > h3 {
@@ -14,7 +14,7 @@
 }
 
 .fw-section-scroll-wrapper {
-width: 100%;
+  width: 100%;
   overflow-x: auto;
   overflow-y: hidden;
   padding: 1rem 0; 
@@ -43,7 +43,7 @@ width: 100%;
     /* Background Image Adjustments*/
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
 
     height: 80dvh;
     min-height: 40rem;

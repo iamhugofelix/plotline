@@ -73,6 +73,14 @@ a {
   line-height: 1.5;
 }
 
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding-top: 4rem;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -249,7 +257,7 @@ html {
   align-items: start;
   gap: 0.5rem;
   cursor: pointer;
-  min-width: 16rem;
+  min-width: 14rem;
   transition: all 0.2s ease-in-out;
   opacity: 0.6;
   scroll-snap-align: start;
@@ -301,8 +309,8 @@ html {
   flex-direction: column;
   justify-content: start;
   align-items: start;
-  padding: 6rem 0 6rem 3rem;
-  gap: 2rem;
+  padding: 1rem 0 1rem 3rem;
+  gap: 1rem;
   width: 100dvw;
 }
 .fw-section > h3 {
@@ -333,7 +341,7 @@ html {
   /* Background Image Adjustments*/
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   height: 80dvh;
   min-height: 40rem;
 }
