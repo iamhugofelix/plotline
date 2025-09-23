@@ -1,6 +1,7 @@
 
 import NowPlayingMovies from "../components/NowPlayingMovies/NowPlayingMovies";
 import TopMovie from "../components/TopMovie/TopMovie";
+import TopRatedMovies from "../components/TopRatedMovies/TopRatedMovies";
 import TrendingMovies from "../components/TrendingMovies/TrendingMovies";
 
 export default function Homepage() {
@@ -11,8 +12,9 @@ export default function Homepage() {
       <>
         <TopMovie />
         <div className="page-content">
-          <TrendingMovies />
           <NowPlayingMovies />
+          <TrendingMovies />
+          <TopRatedMovies />
         </div>
       </>
     );

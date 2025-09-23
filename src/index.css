@@ -261,6 +261,7 @@ html {
   transition: all 0.2s ease-in-out;
   opacity: 0.6;
   scroll-snap-align: start;
+  position: relative;
 }
 .card .card-info {
   padding-top: 0.5rem;
@@ -282,6 +283,24 @@ html {
 }
 .card:hover img {
   outline: solid 4px #a1a1aa;
+}
+
+.card-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ffffff;
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  min-height: 3rem;
+  min-width: 3rem;
+  line-height: 1;
+  font-weight: 900;
+  background: #FF1744;
+  border-radius: 0 0.25rem 0 0.25rem;
 }
 
 .star-rating {

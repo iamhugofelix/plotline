@@ -1,6 +1,6 @@
 import StarRating from "../StarRating/StarRating";
 
-export default function MovieCard({cardPoster, cardTitle, cardYear, cardRating}) {
+export default function MovieCard({cardPoster, cardTitle, cardYear, cardRating, cardPosition}) {
     
     return (
       <div className="card">
@@ -9,6 +9,7 @@ export default function MovieCard({cardPoster, cardTitle, cardYear, cardRating})
           alt={`${cardTitle} Poster`}
           className="card-poster"
         />
+        {cardPosition ? <span className="card-position">{cardPosition}</span> : ''}
         <div className="card-info">
           <h3 className="h6">{cardTitle}</h3>
         </div>

@@ -9,6 +9,7 @@
     transition: all 0.2s ease-in-out;
     opacity: 0.6;
     scroll-snap-align: start;
+    position: relative;
 
     .card-info {
         padding-top: .5rem;
@@ -34,3 +35,17 @@
     }
 }
 
+.card-position {
+    @include flex(column, center, center);
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: $white;
+    font-size: $h3;
+    min-height: 3rem;
+    min-width: 3rem;
+    line-height: 1;
+    font-weight: 900;
+    background: $accent-base;
+    border-radius: 0 .25rem 0 .25rem;
+    }
