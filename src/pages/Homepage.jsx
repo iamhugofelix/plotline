@@ -1,4 +1,5 @@
 
+import MovieCategories from "../components/MovieCategories/MovieCategories";
 import NowPlayingMovies from "../components/NowPlayingMovies/NowPlayingMovies";
 import TopMovie from "../components/TopMovie/TopMovie";
 import TopRatedMovies from "../components/TopRatedMovies/TopRatedMovies";
@@ -15,6 +16,7 @@ export default function Homepage() {
           <NowPlayingMovies />
           <TrendingMovies />
           <TopRatedMovies />
+          <MovieCategories />
         </div>
       </>
     );

@@ -1,0 +1,32 @@
+@use '../../styles/mixins' as *;
+@use '../../styles/variables' as *;
+
+.genre-card {
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    border-radius: .25rem;
+    min-width: 24rem;
+
+    .genre-card-content {
+        width: 100%;
+        height: 100%;
+        background-color: rgba($zinc-950, 32%);
+        @include flex(row, center, center);
+        padding: 5rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        border-radius: .25rem;
+
+    }
+
+    h3 {
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    &:hover {
+        opacity: 1;
+        outline: solid 4px $zinc-400;
+    }
+}

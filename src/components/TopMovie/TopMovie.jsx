@@ -28,8 +28,6 @@ export default function TopMovie() {
       try {
         const data = await fetchMovieDetails(topMovie.id);
 
-        console.log('fetching movie details', data);
-
         setMovieDetails(data);
       } finally {
         setIsLoading(false);
@@ -44,8 +42,8 @@ export default function TopMovie() {
   }
 
   // DELETE LATER
-  console.log("top movies: ", topMovie);
-  console.log('movie details: ', movieDetails);
+  // console.log("top movies: ", topMovie);
+  // console.log('movie details: ', movieDetails);
 
   return (
     <>
