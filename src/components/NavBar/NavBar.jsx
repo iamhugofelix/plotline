@@ -10,7 +10,7 @@ export default function NavBar() {
     <div className="nav-bar">
       <Link to={"/"}>
         <img
-          src="public/plotline-icon.svg"
+          src="/plotline-icon.svg"
           alt="Plotline Logo"
           className="logo"
         />
