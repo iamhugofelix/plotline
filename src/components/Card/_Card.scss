@@ -28,7 +28,6 @@
 
     &:hover {
         opacity: 1;
-        transition: all 0.4s ease-in-out;
 
         img {
             outline: solid 4px $zinc-400;
@@ -49,4 +48,4 @@
     font-weight: 900;
     background: $accent-base;
     border-radius: 0 .25rem 0 .25rem;
-    }
+}

@@ -1,6 +1,6 @@
 import StarRating from "../StarRating/StarRating";
 
-export default function HeroSection({heroTitle, heroDescription, heroRating, heroImage}) {
+export default function HeroSection({heroTitle, heroDescription, heroRating, heroImage, children}) {
 
     return (
       <div
@@ -13,6 +13,7 @@ export default function HeroSection({heroTitle, heroDescription, heroRating, her
             <h1>{heroTitle}</h1>
             <p>{heroDescription}</p>
             <StarRating rating={heroRating} />
+            <div className="hero-children">{children}</div>
         </div>
       </div>
     );

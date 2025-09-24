@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import { fetchTrendingMovies } from "../../services/fetchTrendingMovies";
 import { fetchMovieDetails } from "../../services/fetchMovieDetails";
 import HeroSection from "../PageSections/HeroSection";
+import Button from "../Buttons/Buttons";
+import { ArrowBigRight, ArrowRight } from "lucide-react";
 
 export default function TopMovie() {
   const [movieDetails, setMovieDetails] = useState([]);
@@ -47,14 +49,19 @@ export default function TopMovie() {
 
   return (
     <>
-    {topMovie && 
-    <HeroSection
-      heroImage={movieDetails.backdrop_path}
-      heroTitle={movieDetails.title}
-      heroDescription={movieDetails.overview}
-      heroRating={movieDetails.vote_average}
-      />
-    }
+      {topMovie && (
+        <HeroSection
+          heroImage={movieDetails.backdrop_path}
+          heroTitle={movieDetails.title}
+          heroDescription={movieDetails.overview}
+          heroRating={movieDetails.vote_average}
+        >
+          <Button type="transparent" size="lg">
+            View details
+            <ArrowRight size={18} />
+          </Button>
+        </HeroSection>
+      )}
     </>
   );
 }

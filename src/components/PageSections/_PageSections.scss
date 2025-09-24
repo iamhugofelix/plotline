@@ -44,9 +44,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
-
-    height: 80dvh;
-    min-height: 40rem;
 }
 
 .hero-content {
@@ -57,10 +54,11 @@
   );
     z-index: 2;
     width: 100%;
-    height: 100%;
+    height: 88dvh;
+    min-height: 50rem;
 
     @include flex(column, end, start);
-    padding: 6rem 4rem;
+    padding: 6rem 4rem 4rem 4rem;
     gap: 1.5rem;
 
     h1, p {

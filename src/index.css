@@ -282,7 +282,6 @@ html {
 }
 .card:hover {
   opacity: 1;
-  transition: all 0.4s ease-in-out;
 }
 .card:hover img {
   outline: solid 4px #a1a1aa;
@@ -393,20 +392,19 @@ html {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  height: 80dvh;
-  min-height: 40rem;
 }
 
 .hero-content {
   background: linear-gradient(to top, #09090b 0%, transparent 100%);
   z-index: 2;
   width: 100%;
-  height: 100%;
+  height: 88dvh;
+  min-height: 50rem;
   display: flex;
   flex-direction: column;
   justify-content: end;
   align-items: start;
-  padding: 6rem 4rem;
+  padding: 6rem 4rem 4rem 4rem;
   gap: 1.5rem;
 }
 .hero-content h1, .hero-content p {

@@ -7,7 +7,7 @@ import TrendingMovies from "../components/TrendingMovies/TrendingMovies";
 
 export default function Homepage() {
 
-  console.log("Homepage rendering");
+
     
     return (
       <>
