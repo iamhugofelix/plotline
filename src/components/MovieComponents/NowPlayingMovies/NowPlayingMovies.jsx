@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import FullWidthSection from "../PageSections/FullWidthSection";
-import MovieCard from "../Card/Card";
-import { fetchNowPlayingMovies } from "../../services/fetchNowPlayingMovies";
+import FullWidthSection from "../../PageSections/FullWidthSection";
+import MovieCard from "../../Card/Card";
+import { fetchNowPlayingMovies } from "../../../services/fetchNowPlayingMovies";
 
 export default function NowPlayingMovies () {
     const [nowPlayingMovies, setNowPlayingMovies] = useState([]);

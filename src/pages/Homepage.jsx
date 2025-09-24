@@ -1,9 +1,9 @@
 
-import MovieCategories from "../components/MovieCategories/MovieCategories";
-import NowPlayingMovies from "../components/NowPlayingMovies/NowPlayingMovies";
-import TopMovie from "../components/TopMovie/TopMovie";
-import TopRatedMovies from "../components/TopRatedMovies/TopRatedMovies";
-import TrendingMovies from "../components/TrendingMovies/TrendingMovies";
+import MovieCategories from "../components/MovieComponents/MovieCategories/MovieCategories";
+import NowPlayingMovies from "../components/MovieComponents/NowPlayingMovies/NowPlayingMovies";
+import TopMovie from "../components/MovieComponents/TopMovie/TopMovie";
+import TopRatedMovies from "../components/MovieComponents/TopRatedMovies/TopRatedMovies";
+import TrendingMovies from "../components/MovieComponents/TrendingMovies/TrendingMovies";
 
 export default function Homepage() {
 

@@ -1,23 +1,23 @@
 import { useEffect, useState } from "react";
-import { fetchTrendingMovies } from "../../services/fetchTrendingMovies";
-import FullWidthSection from "../PageSections/FullWidthSection";
-import MovieCard from "../Card/Card";
+import FullWidthSection from "../../PageSections/FullWidthSection";
+import MovieCard from "../../Card/Card";
+import { fetchTopRatedMovies } from "../../../services/fetchTopRatedMovies";
 
-export default function TrendingMovies () {
-    const [trendingMovies, setTrendingMovies] = useState([])
+export default function TopRatedMovies () {
+    const [topRatedMovies, setTopRatedMovies] = useState([]);
     const [isLoading, setIsLoading] = useState(true)
     
     useEffect(() => {
-        const loadTrendingMovies = async () => {
+        const loadTopRatedMovies = async () => {
             try {
-                const data = await fetchTrendingMovies()
-                setTrendingMovies(data)
+                const data = await fetchTopRatedMovies();
+                setTopRatedMovies(data)
             } finally {
                 setIsLoading(false);
             }
         }
 
-        loadTrendingMovies();
+        loadTopRatedMovies();
     }, [])
 
     {isLoading && <p>Loading...</p>}
@@ -26,8 +26,8 @@ export default function TrendingMovies () {
     // console.log(trendingMovies);
 
   return (
-    <FullWidthSection sectionTitle={"Trending movies this week"}>
-      {trendingMovies.slice(1).map((movie) => {
+    <FullWidthSection sectionTitle={"Top 10 movies of all time"}>
+      {topRatedMovies.slice(0, 10).map((movie, index) => {
         return (
           <MovieCard
             key={movie.id}
@@ -35,6 +35,7 @@ export default function TrendingMovies () {
             cardTitle={movie.title}
             cardYear={movie.release_date.slice(0, 4)}
             cardRating={movie.vote_average}
+            cardPosition={index + 1}
           />
         );
       })}
