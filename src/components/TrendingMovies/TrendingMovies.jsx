@@ -27,17 +27,18 @@ export default function TrendingMovies () {
 
   return (
     <FullWidthSection sectionTitle={"Trending movies this week"}>
-        {trendingMovies.slice(1).map((movie) => {
-          return (
-            <MovieCard
-              key={movie.id}
-              cardPoster={movie.poster_path}
-              cardTitle={movie.title}
-              cardYear={movie.release_date.slice(0, 4)}
-              cardRating={movie.vote_average}
-            />
-          );
-        })}
+      {trendingMovies.slice(1).map((movie) => {
+        return (
+          <MovieCard
+            key={movie.id}
+            cardPoster={movie.poster_path}
+            cardTitle={movie.title}
+            cardYear={movie.release_date.slice(0, 4)}
+            cardRating={movie.vote_average}
+          />
+        );
+      })}
+      <div className="hor-spacer"></div>
     </FullWidthSection>
   );
 }

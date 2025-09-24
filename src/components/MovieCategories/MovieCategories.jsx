@@ -23,6 +23,7 @@ export default function MovieCategories () {
           genreName={genre.name}
         />
       ))}
+      <div className="hor-spacer"></div>
     </FullWidthSection>
   );
 }

@@ -4,6 +4,7 @@ import { fetchMovieDetails } from "../../services/fetchMovieDetails";
 import HeroSection from "../PageSections/HeroSection";
 import Button from "../Buttons/Buttons";
 import { ArrowBigRight, ArrowRight } from "lucide-react";
+import Pill from "../Pills/Pills";
 
 export default function TopMovie() {
   const [movieDetails, setMovieDetails] = useState([]);
@@ -45,7 +46,7 @@ export default function TopMovie() {
 
   // DELETE LATER
   // console.log("top movies: ", topMovie);
-  // console.log('movie details: ', movieDetails);
+  console.log('movie details: ', movieDetails);
 
   return (
     <>
@@ -54,7 +55,14 @@ export default function TopMovie() {
           heroImage={movieDetails.backdrop_path}
           heroTitle={movieDetails.title}
           heroDescription={movieDetails.overview}
+          heroYear={movieDetails.release_date?.slice(0, 4)}
           heroRating={movieDetails.vote_average}
+          isFeatured={true}
+          heroCategories={movieDetails.genres?.map((genre) => (
+            <Pill type="transparent" size="md">
+              {genre.name}
+            </Pill>
+          ))}
         >
           <Button type="transparent" size="lg">
             View details

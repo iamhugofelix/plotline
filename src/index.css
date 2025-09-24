@@ -83,6 +83,10 @@ a {
   gap: 2rem;
 }
 
+.hor-spacer {
+  min-width: 1.5rem;
+}
+
 /* 1. Use a more-intuitive box-sizing model */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -206,7 +210,7 @@ html {
   align-items: center;
   line-height: normal;
   cursor: pointer;
-  border-radius: 10rem;
+  border-radius: 0.25rem;
   transition: all 0.2s ease-in-out;
 }
 .pill-red {
@@ -214,13 +218,18 @@ html {
   color: #ffffff;
 }
 .pill-transparent {
-  background: rgba(9, 9, 11, 0.1);
+  background: rgba(9, 9, 11, 0.32);
   color: #ffffff;
 }
 .pill--sm {
   font-size: clamp(0.875rem, 1.2vw, 0.875rem);
   padding: 0.5rem 0.75rem;
-  font-weight: 400;
+  font-weight: 500;
+}
+.pill--md {
+  font-size: clamp(1rem, 1.5vw, 1rem);
+  padding: 0.5rem 0.75rem;
+  font-weight: 500;
 }
 
 .nav-bar {
@@ -279,6 +288,7 @@ html {
 .card img {
   border-radius: 0.25rem;
   width: 100%;
+  outline: solid 1px #18181b;
 }
 .card:hover {
   opacity: 1;
@@ -311,6 +321,7 @@ html {
   opacity: 0.8;
   border-radius: 0.25rem;
   min-width: 24rem;
+  outline: solid 1px #18181b;
 }
 .genre-card .genre-card-content {
   width: 100%;
@@ -339,7 +350,7 @@ html {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  gap: 0.5rem;
+  gap: 0.25rem;
   color: #d4d4d8;
 }
 .star-rating .stars {
@@ -408,5 +419,27 @@ html {
   gap: 1.5rem;
 }
 .hero-content h1, .hero-content p {
-  max-width: 50%;
+  max-width: 800px;
+}
+
+.hero-pills {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero-metadata {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.hero-children {
+  margin-top: 1rem;
 }/*# sourceMappingURL=index.css.map */

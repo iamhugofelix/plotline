@@ -27,18 +27,19 @@ export default function TopRatedMovies () {
 
   return (
     <FullWidthSection sectionTitle={"Top 10 movies of all time"}>
-        {topRatedMovies.slice(0, 10).map((movie, index) => {
-          return (
-            <MovieCard
-              key={movie.id}
-              cardPoster={movie.poster_path}
-              cardTitle={movie.title}
-              cardYear={movie.release_date.slice(0, 4)}
-              cardRating={movie.vote_average}
-              cardPosition={index + 1}
-            />
-          );
-        })}
+      {topRatedMovies.slice(0, 10).map((movie, index) => {
+        return (
+          <MovieCard
+            key={movie.id}
+            cardPoster={movie.poster_path}
+            cardTitle={movie.title}
+            cardYear={movie.release_date.slice(0, 4)}
+            cardRating={movie.vote_average}
+            cardPosition={index + 1}
+          />
+        );
+      })}
+      <div className="hor-spacer"></div>
     </FullWidthSection>
   );
 }

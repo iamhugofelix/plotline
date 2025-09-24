@@ -5,7 +5,7 @@ export default function MovieCard({cardPoster, cardTitle, cardYear, cardRating, 
     return (
       <div className="card">
         <img
-          src={`https://image.tmdb.org/t/p/original/${cardPoster}`}
+          src={`https://image.tmdb.org/t/p/w500/${cardPoster}`}
           alt={`${cardTitle} Poster`}
           className="card-poster"
         />

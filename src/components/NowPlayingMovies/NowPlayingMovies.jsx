@@ -38,6 +38,7 @@ export default function NowPlayingMovies () {
             />
           );
         })}
+        <div className="hor-spacer"></div>
     </FullWidthSection>
   );
 }

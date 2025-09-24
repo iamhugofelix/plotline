@@ -62,6 +62,22 @@
     gap: 1.5rem;
 
     h1, p {
-        max-width: 50%;
-    }
+        max-width: 800px;
+    } 
+}
+
+.hero-pills {
+  @include flex(row, start, center);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.hero-metadata {
+    @include flex(row, start, center);
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+.hero-children {
+  margin-top: 1rem;;
 }

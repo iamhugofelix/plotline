@@ -3,7 +3,7 @@
 
 .star-rating{
     @include flex(row, start, center);
-    gap: 0.5rem;
+    gap: .25rem;
     color: $zinc-300;
     
     .stars {

@@ -3,13 +3,15 @@ import { Link } from "react-router";
 export default function Pill({
   children,
   url,
+  type = 'transparent',
+  size = 'sm'
 }) {
-  // Pick between primary and secondary for the button type
+
 
   return (
     <Link
       to={url}
-      className='pill pill--sm'
+      className={`pill pill-${type} pill--${size}`}
     >
       {children}
     </Link>
