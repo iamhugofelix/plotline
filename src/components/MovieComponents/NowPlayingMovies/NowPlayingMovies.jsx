@@ -31,6 +31,7 @@ export default function NowPlayingMovies () {
           return (
             <MovieCard
               key={movie.id}
+              id={movie.id}
               cardPoster={movie.poster_path}
               cardTitle={movie.title}
               cardYear={movie.release_date.slice(0, 4)}

@@ -59,12 +59,16 @@ export default function TopMovie() {
           heroRating={movieDetails.vote_average}
           isFeatured={true}
           heroCategories={movieDetails.genres?.map((genre) => (
-            <Pill type="transparent" size="md">
+            <Pill type="transparent" size="md" key={genre.id}>
               {genre.name}
             </Pill>
           ))}
         >
-          <Button type="transparent" size="lg">
+          <Button
+            url={`/movies/${movieDetails.id}`}
+            type="transparent"
+            size="lg"
+          >
             View details
             <ArrowRight size={18} />
           </Button>

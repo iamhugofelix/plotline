@@ -17,9 +17,6 @@ export default function NavBar() {
       </Link>
       <div className="nav-links">
         <Buttons url="/" type="nav" size="sm">
-          <Compass size={16} /> Discover
-        </Buttons>
-        <Buttons url="/movies" type="nav" size="sm">
           <Clapperboard size={16} /> Movies
         </Buttons>
         <Buttons url="/tv" type="nav" size="sm">

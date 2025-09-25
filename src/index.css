@@ -269,7 +269,7 @@ html {
   gap: 0.5rem;
   cursor: pointer;
   min-width: 14rem;
-  opacity: 0.8;
+  opacity: 0.65;
   scroll-snap-align: start;
   position: relative;
   transition: all 0.4s ease-in-out;
@@ -318,7 +318,7 @@ html {
 .genre-card {
   background-size: cover;
   background-position: center;
-  opacity: 0.8;
+  opacity: 0.65;
   border-radius: 0.25rem;
   min-width: 24rem;
   outline: solid 1px #18181b;
@@ -416,7 +416,7 @@ html {
   justify-content: end;
   align-items: start;
   padding: 6rem 4rem 4rem 4rem;
-  gap: 1.5rem;
+  gap: 1rem;
 }
 .hero-content h1, .hero-content p {
   max-width: 800px;
@@ -442,4 +442,100 @@ html {
 
 .hero-children {
   margin-top: 1rem;
+}
+
+/* Pages */
+.movie-details-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 4rem;
+  width: 100%;
+  padding: 2rem 4rem;
+}
+.movie-details-page .left-side {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 4rem;
+}
+.movie-details-page .right-side {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.5rem;
+}
+.movie-details-page .right-side img {
+  border-radius: 0.25rem;
+}
+
+.movie-information {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.movie-information .movie-data {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.movie-information .movie-data span {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: solid 1px #3f3f46;
+  border-radius: 0.25rem;
+  font-size: clamp(0.875rem, 1.2vw, 0.875rem);
+}
+
+.movie-cast {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1.5rem;
+}
+.movie-cast .movie-actors {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.actor-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  gap: 0.25rem;
+  text-align: center;
+}
+.actor-card img {
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  border-radius: 0.25rem;
+}
+.actor-card .actor-character {
+  font-size: clamp(0.875rem, 1.2vw, 0.875rem);
+  font-weight: 600;
+  margin-top: 0.25rem;
+}
+.actor-card .actor-name {
+  font-size: clamp(0.875rem, 1.2vw, 0.875rem);
+  color: #a1a1aa;
 }/*# sourceMappingURL=index.css.map */

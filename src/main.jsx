@@ -7,14 +7,15 @@ import MoviesPage from './pages/MoviesPage.jsx'
 import TvPage from './pages/TvPage.jsx'
 import NotFound from './pages/NotFound.jsx'
 import NavBar from './components/NavBar/NavBar.jsx'
+import MovieDetailsPage from './pages/MovieDetailsPage.jsx'
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="movies" element={<MoviesPage />} />
+        <Route path="/" element={<MoviesPage />} />
+        <Route path="movies/:id" element={<MovieDetailsPage />} />
         <Route path="tv" element={<TvPage />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

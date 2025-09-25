@@ -1,0 +1,84 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+.movie-details-page {
+    @include flex(row, start, start);
+    gap: 4rem;
+    width: 100%;
+    padding: 2rem 4rem;
+
+    .left-side{
+        flex: 3;
+        @include flex(column, start, start);
+        gap: 4rem;
+    }
+
+    .right-side{
+        flex: 1;
+        @include flex(column, start, start);
+        gap: 1.5rem;
+
+        img {
+            border-radius: .25rem;
+        }
+    }
+
+}
+
+.movie-information {
+    @include flex(column, start, start);
+    gap: 1rem;
+
+    .movie-data {
+        @include flex(row, start, start);
+        gap: 1rem;
+        margin-top: 1rem;
+
+        span {
+            @include flex(row, start, center);
+            gap: .5rem;
+            padding: .5rem .75rem;
+            background-color: rgba($color: $white, $alpha: .05);
+            border: solid 1px $zinc-700;
+            border-radius: .25rem;
+            font-size: $small;
+        }
+    }
+}
+
+.movie-cast {
+    @include flex(column, start, start);
+    gap: 1.5rem;
+
+    .movie-actors {
+        display: grid;
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+.actor-card {
+    @include flex(column, start, center);
+    gap: .25rem;
+    text-align: center;
+    
+
+    img {
+        aspect-ratio: 1 / 1;
+        object-fit: cover;
+        width: 100%;
+        border-radius: .25rem;
+    }
+
+    .actor-character {
+        font-size: $small;
+        font-weight: $bold;
+        margin-top: .25rem;
+    }
+
+    .actor-name{
+        font-size: $small;
+        color: $zinc-400;
+    }
+
+}
