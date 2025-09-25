@@ -1,9 +1,9 @@
 import { useParams } from "react-router";
 import HeroSection from "../components/PageSections/HeroSection";
 import { useEffect, useState } from "react";
-import { fetchMovieCredits, fetchMovieDetails } from "../services/fetchMovieDetails";
 import Pill from "../components/Pills/Pills";
 import { Calendar, Clock, Globe } from "lucide-react";
+import { fetchMovieCredits, fetchMovieDetails } from "../services/fetchMoviesData/fetchMovieDetails";
 
 export default function MovieDetailsPage () {
   const {id} = useParams()

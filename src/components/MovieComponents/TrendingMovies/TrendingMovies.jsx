@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import { fetchTrendingMovies } from "../../../services/fetchTrendingMovies";
 import FullWidthSection from "../../PageSections/FullWidthSection";
 import MovieCard from "../../Card/Card";
+import { fetchTrendingMovies } from "../../../services/fetchMoviesData/fetchTrendingMovies";
 
 export default function TrendingMovies () {
     const [trendingMovies, setTrendingMovies] = useState([])

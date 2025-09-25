@@ -1,4 +1,4 @@
-import { options } from "./utils";
+import { options } from "../utils";
 
 export async function fetchTrendingMovies() {
   try {

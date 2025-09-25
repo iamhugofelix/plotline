@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import FullWidthSection from "../../PageSections/FullWidthSection";
-import { getGenresWithBackgrounds } from "../../../services/fetchMovieCategories";
 import GenreCard from "../../Card/GenreCard";
+import { getGenresWithBackgrounds } from "../../../services/fetchMoviesData/fetchMovieCategories";
 
 export default function MovieCategories () {
     const [genres, setGenres] = useState([]);

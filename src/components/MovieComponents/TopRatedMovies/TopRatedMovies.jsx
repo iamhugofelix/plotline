@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import FullWidthSection from "../../PageSections/FullWidthSection";
 import MovieCard from "../../Card/Card";
-import { fetchTopRatedMovies } from "../../../services/fetchTopRatedMovies";
+import { fetchTopRatedMovies } from "../../../services/fetchMoviesData/fetchTopRatedMovies";
 
 export default function TopRatedMovies () {
     const [topRatedMovies, setTopRatedMovies] = useState([]);

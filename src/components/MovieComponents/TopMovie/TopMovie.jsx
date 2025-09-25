@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { fetchTrendingMovies } from "../../../services/fetchTrendingMovies";
-import { fetchMovieDetails } from "../../../services/fetchMovieDetails";
 import HeroSection from "../../PageSections/HeroSection";
 import Button from "../../Buttons/Buttons";
 import { ArrowRight } from "lucide-react";
 import Pill from "../../Pills/Pills";
+import { fetchTrendingMovies } from "../../../services/fetchMoviesData/fetchTrendingMovies";
+import { fetchMovieDetails } from "../../../services/fetchMoviesData/fetchMovieDetails";
 
 export default function TopMovie() {
   const [movieDetails, setMovieDetails] = useState([]);

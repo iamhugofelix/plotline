@@ -1,4 +1,4 @@
-import { options } from "./utils";
+import { options } from "../utils";
 
 // Get movie genres
 export async function getGenres() {
