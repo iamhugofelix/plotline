@@ -26,7 +26,7 @@ export default function TopRatedMovies () {
     // console.log(trendingMovies);
 
   return (
-    <FullWidthSection sectionTitle={"Top 10 movies of all time"}>
+    <FullWidthSection sectionTitle={"Top 10 Movies of All Time"}>
       {topRatedMovies.slice(0, 10).map((movie, index) => {
         return (
           <MovieCard

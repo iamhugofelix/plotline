@@ -26,7 +26,7 @@ export default function NowPlayingMovies () {
     // console.log(trendingMovies);
 
   return (
-    <FullWidthSection sectionTitle={"Now playing"}>
+    <FullWidthSection sectionTitle={"Now Playing"}>
         {nowPlayingMovies.map((movie) => {
           return (
             <MovieCard

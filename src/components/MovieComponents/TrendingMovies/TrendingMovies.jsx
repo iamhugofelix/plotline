@@ -26,7 +26,7 @@ export default function TrendingMovies () {
     // console.log(trendingMovies);
 
   return (
-    <FullWidthSection sectionTitle={"Trending movies this week"}>
+    <FullWidthSection sectionTitle={"Trending Movies"}>
       {trendingMovies.slice(1).map((movie) => {
         return (
           <MovieCard
